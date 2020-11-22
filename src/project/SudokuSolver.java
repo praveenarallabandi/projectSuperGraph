@@ -1,8 +1,8 @@
 
 import graph.Graph;
 import graph.GraphAdjListImpl;
-import graphColoringAlgorithms.GraphColoringBackTracking;
-import graphColoringAlgorithms.GraphColoringBackTrackingForSudoku;
+import graph.GraphColoringBackTracking;
+import graph.GraphColoringBackTrackingForSudoku;
 import modules.Colors;
 import modules.FileIO;
 

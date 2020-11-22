@@ -1,4 +1,4 @@
-package modules;
+package graph;
 import java.util.ArrayList;
 
 import graph.Graph;
