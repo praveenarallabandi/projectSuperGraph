@@ -1,8 +1,8 @@
-package graph;
+package graphSudoku;
 import java.util.ArrayList;
 
-import graph.Graph;
-import graph.Vertex;
+import graphSudoku.Graph;
+import graphSudoku.Vertex;
 
 public interface GraphColorings {
 

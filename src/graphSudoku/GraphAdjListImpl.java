@@ -1,4 +1,4 @@
-package graph;
+package graphSudoku;
 import java.util.ArrayList;
 import java.util.LinkedList;
 

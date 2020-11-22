@@ -1,10 +1,10 @@
 
-import graph.Graph;
-import graph.GraphAdjListImpl;
-import graph.GraphColoringBackTracking;
-import graph.GraphColoringBackTrackingForSudoku;
-import graph.Colors;
-import graph.FileIO;
+import graphSudoku.Graph;
+import graphSudoku.GraphAdjListImpl;
+import graphSudoku.GraphColoringBackTracking;
+import graphSudoku.GraphColoringBackTrackingForSudoku;
+import graphSudoku.Colors;
+import graphSudoku.FileIO;
 
 public class SudokuSolver {
 

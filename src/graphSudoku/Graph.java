@@ -1,7 +1,7 @@
-package graph;
+package graphSudoku;
 import java.util.ArrayList;
 
-import graph.GraphColorings;
+import graphSudoku.GraphColorings;
 
 public interface Graph {
 	

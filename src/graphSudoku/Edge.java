@@ -1,4 +1,4 @@
-package graph;
+package graphSudoku;
 import java.util.HashMap;
 
 public class Edge {

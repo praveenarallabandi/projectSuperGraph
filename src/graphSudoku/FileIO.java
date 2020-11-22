@@ -1,4 +1,4 @@
-package graph;
+package graphSudoku;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -8,12 +8,12 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Objects;
 
-import graph.Edge;
-import graph.Graph;
-import graph.GraphAdjListImpl;
-import graph.Vertex;
+import graphSudoku.Edge;
+import graphSudoku.Graph;
+import graphSudoku.GraphAdjListImpl;
+import graphSudoku.Vertex;
 
-import graph.Metadata;
+import graphSudoku.Metadata;
 
 public class FileIO {
 
@@ -70,7 +70,7 @@ public class FileIO {
 			 System.out.println(ex.getMessage());
 		 }
 		
-		//check if it a complete graph or almost a complete graph. The graph with adj matrix is preferred
+		//check if it a complete graph or almost a complete graphSudoku. The graph with adj matrix is preferred
 		/*int threashold = 1;
 		System.out.println("numberOfEdges - " + numberOfEdges + " numberOfvertexes - " + numberOfvertexes);
 		if (2*numberOfEdges > (numberOfvertexes*(numberOfvertexes-1) - threashold))

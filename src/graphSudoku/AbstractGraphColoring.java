@@ -1,9 +1,9 @@
-package graph;
+package graphSudoku;
 import java.util.ArrayList;
 import java.util.Random;
 
-import graph.Graph;
-import graph.Vertex;
+import graphSudoku.Graph;
+import graphSudoku.Vertex;
 
 public abstract class AbstractGraphColoring implements GraphColorings{
 
