@@ -1,4 +1,3 @@
-package Applications;
 
 import graph.Graph;
 import graph.GraphAdjListImpl;

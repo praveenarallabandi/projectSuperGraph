@@ -1,4 +1,4 @@
-
+package project;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.Set;
 
 public class RandomGraph {
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        PrintStream fileStream = new PrintStream(new File("randomGraphOutput"));
+        PrintStream fileStream = new PrintStream(new File("files/randomGraphInput"));
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
@@ -64,21 +64,7 @@ public class RandomGraph {
         
         System.out.println("\nMax Degree: "+maxDegree);
         fileStream.close();
-    }
-
-    private static void WriteToFile(int x, int y) throws FileNotFoundException {
-        PrintStream fileStream = null;
-        try {
-            fileStream = new PrintStream(new FileOutputStream("randomGraphOutput.txt", true));
-            System.out.println(x + " " + y);
-            fileStream.println(String.valueOf(x + " " + y));
-        } catch (FileNotFoundException ex) {
-
-        }
-        catch (Exception e) {
-            System.out.println(e);
-        } finally {
-            fileStream.close();
-        }
+        String[] args1 = {"randomInput"};
+        SuperGraphColoring.main(args1);
     }
 }

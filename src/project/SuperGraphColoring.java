@@ -1,5 +1,5 @@
 
-
+package project;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -25,9 +25,17 @@ public class SuperGraphColoring {
     private static Scanner scanner;
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        //File file = new File("randomGraphOutput");
-        File file = new File("files/input");
-        PrintStream fileStream = new PrintStream(new File("files/output.txt"));
+        // initialize input file for question 1
+        String inputFile = "files/input";
+        String outputFile = "files/output.txt";
+        if(args.length != 0) {
+            // reset the input file for question 2
+            inputFile = "files/randomGraphInput";
+            outputFile = "files/randomOutput.txt";
+        }
+        File file = new File(inputFile);
+        //File file = new File("files/input");
+        PrintStream fileStream = new PrintStream(new File(outputFile));
 
         scanner = new Scanner(file);
         int vertices = scanner.nextInt();           //read input
