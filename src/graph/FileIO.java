@@ -13,7 +13,7 @@ import graph.Graph;
 import graph.GraphAdjListImpl;
 import graph.Vertex;
 
-import modules.Metadata;
+import graph.Metadata;
 
 public class FileIO {
 

@@ -3,8 +3,8 @@ import graph.Graph;
 import graph.GraphAdjListImpl;
 import graph.GraphColoringBackTracking;
 import graph.GraphColoringBackTrackingForSudoku;
-import modules.Colors;
-import modules.FileIO;
+import graph.Colors;
+import graph.FileIO;
 
 public class SudokuSolver {
 
