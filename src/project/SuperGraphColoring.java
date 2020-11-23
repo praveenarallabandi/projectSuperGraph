@@ -57,19 +57,19 @@ public class SuperGraphColoring {
         listColor = new ArrayList<>();
         InitializeColors(vertices, count);
 
-        int max_degree = -1;
+        int maxDegree = -1;
         for (int i = 0; i < vertices; i++) {
             int temp = degree(graph, i);
-            if (temp > max_degree)
-                max_degree = temp;        //calculate max degree in graph
+            if (temp > maxDegree)
+                maxDegree = temp;
         }
 
-        table = new int[vertices][max_degree + 2];
+        table = new int[vertices][maxDegree + 2];
 
         for (int i = 0; i < preInitalizedColors.length; i++) {
             int index = preInitalizedColors[i];
             int col = color[index];
-            for (int j = 0; j < graph[index].length; j++) {   //for every node go to it's adjacent node and if colored replace it's positon in table as 1
+            for (int j = 0; j < graph[index].length; j++) {
                 if (graph[index][j] != 0) {
                     table[j][col] = 1;
                 }
@@ -82,7 +82,7 @@ public class SuperGraphColoring {
 
         while (listColor.size() != vertices) {
             St_Obj1 o = list.get(0);
-            for (int j = 1; j < table[o.index].length; j++) {      //for every ele first zero is taken and index is taken as it's color
+            for (int j = 1; j < table[o.index].length; j++) {
                 if (table[o.index][j] == 0) {
                     color[o.index] = j;
                     for (int k = 0; k < graph[o.index].length; k++) {
@@ -137,7 +137,7 @@ public class SuperGraphColoring {
         }
     }
 
-    public static void GetMaxDegree() {  //finds the list in which elements are ordered descending by coloredAdjNodes value of node i
+    public static void GetMaxDegree() {
         list = new ArrayList<St_Obj1>();
         list.clear();
         for (int i = 0; i < graph.length; i++) {
@@ -155,7 +155,7 @@ public class SuperGraphColoring {
         list.sort(cmp);
     }
 
-    public static int uncoloredAdjCount(int graph[][], int i, int color[]) { //finds no of nodes not colored and adjacent to node i
+    public static int uncoloredAdjCount(int graph[][], int i, int color[]) {
         int count = 0;
         for (int j = 0; j < graph[i].length; j++) {
             if (graph[i][j] != 0) {
@@ -168,7 +168,7 @@ public class SuperGraphColoring {
         return count;
     }
 
-    public static int coloredAdjNodes(int graph[][], int i, int color[], int c[]) {    //finds no of nodes colored and adjacent to node i
+    public static int coloredAdjNodes(int graph[][], int i, int color[], int c[]) {
         int count = 0;
         List<Integer> l = new ArrayList<>();
         for (int j = 0; j < graph[i].length; j++) {
@@ -182,7 +182,7 @@ public class SuperGraphColoring {
         return count;
     }
 
-    public static int degree(int graph[][], int i) {            // method to find degree of node i
+    public static int degree(int graph[][], int i) {
         int count = 0;
         for (int j = 0; j < graph[i].length; j++) {
             if (graph[i][j] != 0) {
