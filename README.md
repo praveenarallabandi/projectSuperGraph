@@ -1,6 +1,6 @@
 # projectSuperGraph
 Step 1 - 
-cd src`
+cd src
 
 for Question 1 - Super Graph Coloring
 
