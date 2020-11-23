@@ -17,7 +17,7 @@ public class GraphColoringBackTracking extends AbstractGraphColoring {
 		int colorsAvailable = Colors.maximumColorsAvailable();
 		
 		if(isGraphColorable(G, colorsAvailable)){
-			System.out.println("With the available colors the graph was colorable");
+			System.out.println("With the available colors the graph was colorable: " + colorsAvailable);
 		}
 		else{
 			System.out.println("With the available colors the graph was not colorable");

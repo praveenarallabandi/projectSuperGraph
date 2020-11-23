@@ -14,11 +14,11 @@ public class GraphColoringBackTrackingForSudoku extends AbstractGraphColoring {
 	
 	@Override
 	public void colorGraph(Graph G) {
-		//only 9 colors are used
+		// only 9 colors are used
 		int colorsAvailable = 9;
 		
 		if(isGraphColorable(G, colorsAvailable)){
-			System.out.println("With the available colors the graph was colorable");
+			System.out.println("Maximum colors available: " + colorsAvailable);
 		}
 		else{
 			System.out.println("With the available colors the graph was not colorable");

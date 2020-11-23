@@ -150,8 +150,7 @@ public class SuperGraphColoring {
             }
         }
 
-
-        MySt_Cmp1 cmp = new MySt_Cmp1();
+        compareObjects cmp = new compareObjects();
         list.sort(cmp);
     }
 
@@ -198,7 +197,7 @@ class St_Obj1 {
     int value;
 }
 
-class MySt_Cmp1 implements Comparator<St_Obj1> {
+class compareObjects implements Comparator<St_Obj1> {
 
     @Override
     public int compare(St_Obj1 o1, St_Obj1 o2) {

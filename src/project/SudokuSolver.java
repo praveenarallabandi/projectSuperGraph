@@ -13,6 +13,9 @@ public class SudokuSolver {
 		String path = "Files/Sudoku";
 		Graph G = FileIO.readSudokuAndCreateGraph(path, new GraphAdjListImpl());
 		G.setGraphColoringTechnique(new GraphColoringBackTrackingForSudoku());
+		System.out.println("<------------Input Sudoku----------->");
+		Colors.printSudoku(G);
+		System.out.println("<------------Ouput Sudoku----------->");
 		G.colorGraph();
 		Colors.printSudoku(G);
 	}
